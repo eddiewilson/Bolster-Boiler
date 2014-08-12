@@ -1,0 +1,37 @@
+$full-site-width:1010px;
+$col:100px;
+$gutter:30px;
+$baseline:11px;
+$accent-color: #3dc5ff;
+$accent-color-2:#f7f7f7;
+$text-color:#444444;
+$text-color-2:#cccccc;
+$font-premier-medium:'Brandon-Grotesque';
+$font-secondary-medium:'Chaparral-Pro';
+
+.error404{
+	#branding{
+		img{
+			display: none;
+		}
+	}
+}
+#error-404{
+	margin-bottom: $baseline * 13;
+	h1{
+		font-family: $font-premier-medium;
+		font-style: normal;
+		font-size: 10em;
+		text-align: center;
+		margin-bottom: $baseline * 2;
+	}
+}
+
+#message-404{
+	text-align: center;
+	p{
+		font-family: $font-secondary-medium;
+		font-style: italic;
+	}
+}
+

@@ -1,0 +1,150 @@
+/*!
+Theme Name: Base Theme
+Theme URI: http://www.lighthouseandgiant.co.uk
+Description: The starting point for Lighthouse & Giant designed and built wordpress powered websites.
+Author: Lighthouse & Giant
+Author URI: http://www.lighthouseandgiant.co.uk
+Version: 4.0
+Tags: 
+License: 
+License URI: 
+*/
+
+@import "compass/reset";
+
+$full-site-width:1074px;
+$col:108px;
+$gutter:30px;
+$baseline:11px;
+$accent-color:#79c9d6;
+$accent-color-2:#f7f7f7;
+$font-premier-medium:'BrandonGrotesque-Medium';
+$font-secondary-medium:'Georgia';
+
+body{
+	background-color: red;	
+}
+
+a{
+	
+}
+p{
+	margin-bottom: $baseline * 3;
+	line-height: $baseline * 3;
+	font-size: 24px;
+}
+align-left{
+	float: left;
+}
+align-right{
+	float:right;
+}
+align-center{
+	text-align: center;
+	margin: 0 auto;
+}
+blockquote {
+	margin-left: -$col * 2 + -$gutter * 2;
+	p{
+		font-size: 31px;
+		line-height: $baseline * 4;	
+		margin-bottom: 11px;
+	}
+}
+cite{
+	font-style: normal;
+	margin-left: -$col * 1 + -$gutter * 1;
+	font-size: 18px;
+}
+strong{
+	font-weight: bold;
+}
+// fonts //
+h3{
+	font-size: 40px;
+	font-style: normal;
+	margin-left: $col + $gutter;
+	margin-bottom: $baseline * 6;
+}
+nav, h3, h5{
+	font-family: $font-premier-medium;
+} 
+header{
+	height:246px;
+	width: $full-site-width;
+	margin: 0 auto;
+}
+#branding{
+	float:left;
+	margin-left: $col * 3 + $gutter * 3;
+	margin-top: 56px;
+	width: $col * 2 + $gutter;
+}
+#site-title{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+nav{
+	float: left;
+	margin-top: 56px;
+	margin-left: $col + $gutter * 2;
+	padding-bottom: 126px;
+	font-size: 24px;
+	text-align: right;
+	ul{
+		
+	}
+	ul li{
+		display: inline-block;
+		margin-right: $gutter / 2;
+	}
+	a{
+		color:$accent-color;
+		text-decoration: none;
+		:hover{
+			text-decoration: underline;
+		}
+	}
+}
+.menu-header-nav-container{
+	margin-top: 45px;
+}
+#container{
+	
+}
+.hero{
+	
+	img{
+	width: 100%;
+	}
+}
+.scribble{
+	margin-top: -$baseline *5;
+	img{
+	width: 100%;
+	}
+}
+#content{
+	margin: 0 auto;
+	width: $col * 6 + $gutter * 5 ;
+	font-family: $font-secondary-medium;
+	font-style: italic;
+	
+}
+.entry-content{
+	margin-top: -$baseline * 8;
+	p{
+	margin-left: $col * 2 + $gutter * 2;
+		img{
+		margin-left: -$col * 2 + -$gutter * 2;
+		margin-top: $baseline * 8; 
+		}
+	}
+}
+footer{
+	background-color: #e2e2e2;
+	padding-top: $baseline * 5;
+	padding-bottom: $baseline * 6;
+	border-bottom: $accent-color solid $baseline * 9;
+}

@@ -1,0 +1,122 @@
+body{
+	font-family:"BrandonGrotesque-Medium";
+}
+#wpadminbar, #contextual-help-link-wrap,#screen-options-link-wrap, .view-switch, .tablenav-pages, .search-box, .add-new-h2, #adminmenushadow, .wp-menu-arrow{
+	display: none !important;
+}
+.widget .widget-top, .postbox h3, .stuffbox h3, .widefat thead tr th, .widefat tfoot tr th, h3.dashboard-widget-title, h3.dashboard-widget-title span, h3.dashboard-widget-title small, .sidebar-name, #nav-menu-header, #nav-menu-footer, .menu-item-handle {
+	background-image: none !important;
+	font-family: "BrandonGrotesque-Medium";
+}
+h2{
+	font-family: "BrandonGrotesque-Medium" !important;
+}
+a{
+	color: #3e3e3e;
+}
+.wp-toolbar{
+	padding-top: 0px !important;
+}
+.tablenav select{
+	padding-left: 20px;
+	padding-right:20px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #e3e3e3;
+	border: 0px;
+	border-radius: 0px;
+	-webkit-appearance: none;	
+}
+#doaction, #post-query-submit{
+	padding-left: 20px;
+	padding-right:20px;
+  overflow: hidden;
+  background: url(new_arrow.png) no-repeat right #ddd;
+  border: 1px solid #ccc;
+  background-color:#00ccff;
+	border: 0px;
+	border-radius: 0px;
+	-webkit-appearance: none;
+	color: #ffffff;
+	text-shadow: none;
+}
+.wp-list-table{
+	font-family:"ChaparralPro-Italic"; 
+}
+.post-title a, .page-title a{
+	font-weight: 100;
+}
+.wp-list-table, .widefat{
+	background-color: #ffffff;
+}
+#adminmenuback, #adminmenuwrap{
+	background-color: #e3e3e3;
+	border: 0px;
+}
+.wp-submenu{
+	background-color: #e3e3e3 !important;
+}
+.wp-submenu li a{
+	color: #333333;
+}
+.wp-submenu-wrap li a{
+	border-left: 3px solid #3e3e3e;
+	margin-left: 5px !important;
+}
+#adminmenuback, #adminmenuwrap, #adminmenu, #adminmenu .wp-submenu {
+width: 215px;
+}
+.current{
+	color: #00c5ef !important;
+}
+.wp-menu-open{
+	text-shadow: none !important;
+	border: 0px !important;
+}
+.wp-menu-name{
+	background-color: #e3e3e3;
+	color: #333333;
+}
+.widefat{
+	border: 0px;
+}
+.widefat thead tr th{
+	background-color: white;
+	border: 0px;
+}
+.widefat td, .widefat th {
+	border: 0px;
+}
+#adminmenu a.menu-top, #adminmenu .wp-submenu .wp-submenu-head {
+	border: 0px;
+}
+#wpbody-content {
+padding-bottom: 65px;
+float: left;
+width: 750px;
+}
+/* Hide the menu icons */
+
+#adminmenu .wp-menu-image {
+	display: none;
+}
+
+.folded #adminmenu .wp-menu-image {
+	display: inline;
+}
+
+@media only screen and (max-width:900px) {
+	#adminmenu .wp-menu-image {
+		display: inline;
+	}	
+}
+
+/* Hide the page title icons */
+
+.icon32 {
+	display: none;
+}
+
+.wrap h2 {
+	margin-left: 5px;
+}

@@ -1,0 +1,36 @@
+{
+  "convertHtml": {
+    "relativePaths": false
+  },
+  "customRubyPath": null,
+  "customTodos": null,
+  "debug": false,
+  "domain": null,
+  "followLeader": true,
+  "ignoreDir": [
+    "ignore"
+  ],
+  "lintScripts": false,
+  "modelSource": null,
+  "optimiseImages": true,
+  "password": null,
+  "preprocessorLocations": [
+    "wp-content/themes/boilerplate/assets/sass"
+  ],
+  "preprocessorScriptOutput": "wp-content/themes/boilerplate/assets/js",
+  "preprocessorStyleOutput": "wp-content/themes/boilerplate/assets/css",
+  "projectDescription": "Project Description",
+  "projectName": "Project Name",
+  "publishedId": null,
+  "remoteDebugPort": 0,
+  "routes": null,
+  "serverHostname": null,
+  "serverPort": null,
+  "simpleModeFileTypes": null,
+  "simpleModePartnerServer": "localhost:8888",
+  "templateDefaultLayout": "layout",
+  "templateDefaultPage": "index",
+  "templateDirectory": "templates",
+  "type": "simple",
+  "useCompass": true
+}

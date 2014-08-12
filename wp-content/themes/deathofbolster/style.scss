@@ -1,0 +1,406 @@
+/*!
+Theme Name: Base Theme
+Theme URI: http://www.lighthouseandgiant.co.uk
+Description: The starting point for Lighthouse & Giant designed and built wordpress powered websites.
+Author: Lighthouse & Giant
+Author URI: http://www.lighthouseandgiant.co.uk
+Version: 4.0
+Tags: 
+License: 
+License URI: 
+*/
+//Imports
+
+@import "compass/reset";
+@import "compass/css3";
+@import "css/footer";
+@import "css/swipe";
+@import "css/grid";
+@import "css/wpcorecss";
+@import "css/form";
+
+//Mixins
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: 320px) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: 321px) and (max-width: 1024px) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: 1024px) { @content; }
+  }
+
+}
+//Variables
+
+$full-site-width:1010px;
+$col:100px;
+$gutter:30px;
+$baseline:11px;
+$accent-color: #3dc5ff;
+$accent-color-2:#f7f7f7;
+$text-color:#444444;
+$text-color-2:#cccccc;
+$font-premier:"brandon-grotesque",sans-serif;
+$font-premier-light:300;
+$font-premier-regular:400;
+$font-premier-medium:500;
+$font-premier-bold:700;
+
+
+//Go
+
+p:empty {display:none;}
+
+html{
+	overflow-x: hidden;
+}
+body{
+	color: $text-color;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(255,255,255,0.01) 0 0 1px;
+	overflow-x: hidden;
+	font-family: $font-premier;
+}
+a{
+	border-bottom: 1px solid $accent-color;
+	color: $text-color;
+	-moz-transition: all ease-in 0.1s;
+	-webkit-transition: all ease-in 0.1s;
+	transition: all ease-in 0.1s;
+	text-decoration: none;
+	&:hover{
+		color: $accent-color;
+		text-decoration: none;
+	}
+}
+p{
+	margin-bottom: $baseline * 3;
+	line-height: $baseline * 3;
+	font-size: 24px;
+}
+blockquote {
+	margin-left: -$col + -$gutter;
+	margin-top: $baseline * 4 + 5;
+	margin-bottom: $baseline * 5;
+	p{
+		font-size: 31px;
+		line-height: $baseline * 4;	
+		width: $col * 5 + $gutter * 5 !important;
+		margin-bottom: $baseline - 3 !important;
+		font-family: $font-premier !important;
+		font-weight: $font-premier-bold;
+	}
+}
+cite{
+	font-style: normal;
+	font-size: 18px;
+	margin-bottom: $baseline * 4;
+	margin-top: -$baseline * 3;
+	display: block;
+}
+strong{
+	font-weight: bold;
+}
+sup{
+	font-size: 111px;
+	font-style: normal;
+	float: left;
+	margin-left: -$gutter * 4.43333333;
+	padding-bottom: $baseline *2;
+	padding-top: $baseline * 3;
+}
+// fonts //
+h3{
+	font-size: 40px;
+	font-style: normal;
+	margin-bottom: $baseline * 6;
+}
+h4{
+	font-size:24px;
+}
+h5{
+	font-size: 18px;
+}
+nav,sup, h3, h4, h5{
+	font-weight: $font-premier-medium;
+}
+::selection{
+	background-color: $accent-color;
+}
+img{
+	max-width: 100%;
+}
+.col-1, .col-2,{
+	float:left;
+	margin-right: $gutter;
+}
+.last{
+	margin-right: 0px;
+}
+.col-1{
+	width: $col * 2 + $gutter;
+}
+.col-2{
+	width: $col * 4 + $gutter * 3;
+}
+header{
+	width: $full-site-width;
+	margin: 0 auto;
+	padding-bottom: $baseline * 5;
+}
+#branding{
+	float:left;
+	margin-left: $col * 2 + $gutter * 2;
+	margin-top: $baseline * 5;
+	width: $col * 2 + $gutter;
+	height: $baseline * 12;
+	img{
+		width: 80px;
+		height:80px;
+		margin-top: $baseline + 4;
+	}
+	a{
+		border-bottom: none;
+	}
+}
+#site-title{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+nav{
+	float: left;
+	margin-top: $baseline * 9;
+	margin-left: $col + $gutter * 2;
+	font-size: 24px;
+	text-align: right;
+	ul{
+		
+	}
+	ul li{
+		display: inline-block;
+		margin-right: $gutter / 2;
+	}
+	a{
+		color: $text-color;
+		&:hover{
+			color: $accent-color;
+		}
+	}
+}
+.page-wrapper{
+	max-width: $full-site-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+.content{
+	width: $col * 6 + $gutter * 5;
+	margin-bottom: $baseline * 7;
+	margin-left: auto;
+	margin-right: auto;
+	img{
+		margin-top: $baseline * 4;
+	}
+}
+#container{
+	
+}
+.home{
+	nav{
+		ul{
+			li{
+				a{
+					&:hover{
+						color: $accent-color !important;
+					}
+				}
+			}
+		}
+	}
+}
+.home #branding{
+	visibility: hidden;
+}
+#site{
+	background-position: center top; 
+	background-repeat: no-repeat;
+}
+.cover-image{
+	top: 0px;
+	z-index: -1;
+	margin-left: -1280px;
+	left: 50%;
+	height: 496px;
+	img{
+		position: absolute;
+		top: 0px;
+		left: 50%;
+		margin-left: -1280px;
+		z-index: -1;	
+	}
+}
+.single{
+	
+	h1{
+		font-weight: $font-premier-bold;
+		font-size: 31px;
+		margin-bottom: $baseline *2;	
+	}
+	h2{
+		font-family: $font-premier-regular;
+		
+		font-size: 31px;
+		margin-bottom: $baseline *5;
+	}
+	.entry-content{
+		&:first-child{
+			&:first-letter{
+				font-family: $font-premier-medium;
+				font-size: 115px;
+				float:left;
+				margin-left: -$baseline;
+				margin-top: $baseline * 3 + 3;
+				padding-right: $baseline;
+				padding-bottom: $baseline;
+			}
+		}
+	}
+	
+}
+.hero{
+	margin-left: -1280px;
+	left:50%;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: $baseline *9;
+	z-index: 1;
+	width: 2560px;
+	img{
+	margin:0 auto;
+	overflow-x: hidden;
+	}
+}
+.about-hero{
+	background-image: url('http://www.lighthouseandgiant.co.uk/wp-content/themes/deathofbolster/assets/us1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height:621px;
+	background-position-x: center;
+	margin-top: -242px;
+	margin-bottom: $baseline * 5;
+}
+.entry-title{
+	margin-top: - $baseline *18;
+	margin-bottom: $baseline *15 - 5;
+	color: #222222;
+}
+.entry-content{
+	
+	p{
+	margin-left: $col * 1 + $gutter * 1;
+	width: $col * 4 + $gutter * 3;
+	}
+	img{
+		
+		width:100%;
+	}
+}
+.page-template-page-about-contact-php{
+	.entry-content{
+		blockquote{
+			margin-left: $col + $gutter;
+			margin-top: $baseline * 4 + 3;
+				p{
+					text-transform: none !important;
+				}
+		}
+		ul{
+			margin-left: $col * 2+ $gutter * 2;
+			font-size: 24px;
+			font-family: $font-premier-regular;
+			
+			margin-top: -8px;
+			margin-bottom: $baseline * 4 + 5;
+			li{
+				margin-bottom: $baseline - 2;
+			}
+		}
+		p{
+		margin-left: $col * 2 + $gutter * 2;
+			&:first-child{
+			font-size: 31px;
+			font-weight: $font-premier-medium;
+			line-height: $baseline *4;
+			text-transform: uppercase;
+			width: $col * 6 + $gutter * 4;
+			margin-left: -4px;
+			display: inline-block;
+			margin-bottom: $baseline *10;
+			}
+				&:nth-child(2){
+					&:first-letter{
+					font-size: 250px;
+					display:inline-block;
+					margin-left: - $col * 2 - $gutter * 3 + 5;
+					font-weight: $font-premier-light;
+					font-style: normal;
+					margin-top: $baseline * 7;
+					float: left;
+					margin-right: $gutter;
+				}
+			}
+		}		
+	}
+}
+.page-template-page-work-php{
+	#menu-item-22{
+		a{
+			color: $accent-color;
+		}
+	}
+}
+.page-template-page-about-contact-php{
+	#menu-item-21{
+		a{
+			color: $accent-color;
+			}
+	}
+}
+
+.contact{
+	margin-top: $baseline * 7;
+	margin-bottom: $baseline * 7;
+	margin-left: $col + $gutter;
+	p{
+		font-weight: $font-premier-medium;
+	}
+	a{
+		text-decoration: none;
+	}
+}
+
+#ajax-loading{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#fff;
+	z-index:99
+}
+#animation{
+	width:70px;
+	height:70px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	background-image:url("http://www.lighthouseandgiant.co.uk/wp-content/themes/deathofbolster/assets/ajax-loader.gif");
+	background-size:70px 70px;
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-35px 0 0 -35px;
+}

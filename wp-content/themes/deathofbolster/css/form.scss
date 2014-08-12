@@ -1,0 +1,102 @@
+//Variables
+
+$full-site-width:1010px;
+$col:100px;
+$gutter:30px;
+$baseline:11px;
+$accent-color: #3dc5ff;
+$accent-color-2:#f7f7f7;
+$text-color:#444444;
+$text-color-2:#cccccc;
+$font-premier-medium:'Brandon-Grotesque';
+$font-secondary-medium:'Chaparral-Pro';
+
+
+// form
+
+#contact-form{
+	font-family: $font-secondary-medium;
+	font-style: italic;
+	margin-bottom: $baseline * 7;
+}
+label{
+	font-size: 24px;
+	margin-bottom: $baseline;
+	display:block;
+}
+form, fieldset, legend, ol, li {
+	margin: 0;
+	padding: 0;
+}
+form{
+	width:470px;
+	margin-left: $col + $gutter;
+}
+input, textarea{
+	width: 470px;
+	height: 27px;
+	background-color: white;
+	border: none;
+	font-size: 0.7em;
+	box-shadow:inset 0px 0px 10px 1px rgba(0,0,0,0.13);
+	-moz-box-shadow:inset 0px 0px 10px 1px rgba(0,0,0,0.13);
+  -webkit-box-shadow:inset 0px 0px 10px 1px rgba(0,0,0,0.13);
+	margin-bottom: $baseline *3;
+	-webkit-appearance: none;
+}
+textarea{
+	min-height: 118px;
+	max-width: 469px;
+}
+fieldset{
+	border-style: none;	
+}
+.quoteform ul{
+	padding: 0;
+}
+.quoteform ul li{
+	list-style: none;
+}
+#submit-button{
+	color: white;
+	border: none;
+	width:472px;
+	height: $baseline *5;
+	font-size: 24px;
+	background-color: $accent-color;
+	-webkit-appearance:none;
+	font-family: $font-premier-medium;
+	border-radius: 2px;
+	&:hover{
+	background-color: #cfcfcf;
+	-webkit-appearance:none;
+	cursor: pointer;
+	-webkit-transition: background-color 0.02s ease-out;
+	-moz-transition: background-color 0.02s ease-out;
+	transition: background-color 0.02s ease-out;
+	box-shadow: none;
+}
+}
+.form a{
+	text-decoration: underline;
+	color: white;
+	:hover{
+	color: #cfcfcf;
+	}
+}
+#errors, #success{
+	display: none;
+	font-size: 24px;
+	margin-left: $col + $gutter;
+	margin-bottom: $baseline * 7;
+}
+#info{
+	color: $accent-color;
+	margin-bottom: $baseline * 2;
+}
+#success{
+	font-family: $font-premier-medium;
+}
+#req-field-desc{
+	margin-left: 0px;;
+}
