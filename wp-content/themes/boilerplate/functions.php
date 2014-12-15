@@ -469,4 +469,16 @@ function login_css() {
 add_action('login_head', 'login_css');
 // Require Metaboxes
 require_once('cmb/metaboxes.php');
+// Rename 'Posts' to 'Journal Entries'
+require_once('functions/admin-renames.php');
+// Branding in Admin
+require_once('functions/admin-branding.php');
+// Frontend Colours
+require_once('functions/frontend-colour.php');
+// Tiny MCE Custom Type
+require_once('functions/custom-tinymce/admin-tinymce.php');
+// Tiny MCE Buttons
+require('functions/custom-tinymce/admin-tinymce-buttons.php');
+// Custom Admin
+require('functions/custom-admin/custom-admin.php');
 ?>
