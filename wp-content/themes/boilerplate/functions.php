@@ -468,7 +468,7 @@ function login_css() {
 }
 add_action('login_head', 'login_css');
 // Require Metaboxes
-require_once('cmb/metaboxes.php');
+require_once('metaboxes.php');
 // Rename 'Posts' to 'Journal Entries'
 require_once('functions/admin-renames.php');
 // Branding in Admin

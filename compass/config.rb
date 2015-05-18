@@ -23,3 +23,5 @@ on_stylesheet_saved do |file|
     FileUtils.mv(file, File.dirname(file) + "/../../" + File.basename(file))
   end
 end
+
+require 'modular-scale'
